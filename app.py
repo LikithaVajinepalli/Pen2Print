@@ -18,6 +18,9 @@ from datetime import datetime
 import tempfile
 
 # Initialize Flask app
+# Converts handwritten text into editable digital content, enables real-time editing, supports exporting the output as a PDF
+# and provides text-to-speech playback of the extracted text.
+
 app = Flask(__name__)
 app.secret_key = os.urandom(24)
 app.config['UPLOAD_FOLDER'] = 'uploads'
